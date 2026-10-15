@@ -1,0 +1,101 @@
+candidate_id,rank,score,reasoning
+CAND_0081846,1,0.5767,Lead AI Engineer with 6.7 YOE; demonstrates 6.7 years relevant experience matching target band.
+CAND_0052682,2,0.5717,NLP Engineer with 6.6 YOE; demonstrates 6.6 years relevant experience matching target band.
+CAND_0005260,3,0.5687,Senior NLP Engineer with 5.2 YOE; demonstrates 5.2 years relevant experience matching target band.
+CAND_0027691,4,0.5614,NLP Engineer with 6.5 YOE; demonstrates 6.5 years relevant experience matching target band.
+CAND_0027874,5,0.5574,Content Writer with 10.2 YOE; demonstrates 10.2 years relevant experience matching target band.
+CAND_0036184,6,0.5554,Recommendation Systems Engineer with 6.0 YOE; demonstrates 6.0 years relevant experience matching target band.
+CAND_0046064,7,0.5554,Senior NLP Engineer with 8.9 YOE; demonstrates 8.9 years relevant experience matching target band.
+CAND_0011687,8,0.5544,Senior NLP Engineer with 7.8 YOE; demonstrates 7.8 years relevant experience matching target band.
+CAND_0081686,9,0.5507,Search Engineer with 6.0 YOE; demonstrates 6.0 years relevant experience matching target band.
+CAND_0058688,10,0.5494,AI Engineer with 6.7 YOE; demonstrates 6.7 years relevant experience matching target band.
+CAND_0047542,11,0.5492,Senior Software Engineer (ML) with 5.0 YOE; demonstrates 5.0 years relevant experience matching target band.
+CAND_0002025,12,0.5482,Senior AI Engineer with 5.9 YOE; demonstrates 5.9 years relevant experience matching target band.
+CAND_0013665,13,0.5482,Senior Software Engineer (ML) with 5.2 YOE; demonstrates 5.2 years relevant experience matching target band.
+CAND_0051004,14,0.5479,Senior Data Scientist with 4.7 YOE; demonstrates 4.7 years relevant experience matching target band.
+CAND_0053605,15,0.5472,Senior Software Engineer (ML) with 6.9 YOE; demonstrates 6.9 years relevant experience matching target band.
+CAND_0055905,16,0.5454,Senior Machine Learning Engineer with 8.1 YOE; demonstrates 8.1 years relevant experience matching target band.
+CAND_0076163,17,0.5454,NLP Engineer with 6.9 YOE; demonstrates 6.9 years relevant experience matching target band.
+CAND_0039838,18,0.5444,Recommendation Systems Engineer with 4.9 YOE; demonstrates 4.9 years relevant experience matching target band (Note: long notice period (90 days)).
+CAND_0030784,19,0.5417,Data Scientist with 4.4 YOE; demonstrates 4.4 years relevant experience matching target band (Note: long notice period (90 days)).
+CAND_0008425,20,0.5416,Senior NLP Engineer with 7.8 YOE; demonstrates 7.8 years relevant experience matching target band (Note: long notice period (90 days)).
+CAND_0037944,21,0.5412,Senior Data Scientist with 4.9 YOE; demonstrates 4.9 years relevant experience matching target band.
+CAND_0016553,22,0.5409,Content Writer with 8.3 YOE; demonstrates 8.3 years relevant experience matching target band.
+CAND_0030031,23,0.5402,AI Engineer with 5.7 YOE; demonstrates 5.7 years relevant experience matching target band.
+CAND_0095528,24,0.5393,Senior Data Scientist with 5.3 YOE; demonstrates 5.3 years relevant experience matching target band.
+CAND_0007009,25,0.5392,Recommendation Systems Engineer with 7.9 YOE; demonstrates 7.9 years relevant experience matching target band.
+CAND_0067866,26,0.5392,Senior Software Engineer (ML) with 6.4 YOE; demonstrates 6.4 years relevant experience matching target band.
+CAND_0071974,27,0.5392,Senior AI Engineer with 7.8 YOE; demonstrates 7.8 years relevant experience matching target band.
+CAND_0056176,28,0.5382,Senior Data Engineer with 7.0 YOE; demonstrates 7.0 years relevant experience matching target band.
+CAND_0082645,29,0.5379,Content Writer with 9.3 YOE; demonstrates 9.3 years relevant experience matching target band.
+CAND_0052328,30,0.5372,Recommendation Systems Engineer with 6.5 YOE; demonstrates 6.5 years relevant experience matching target band.
+CAND_0042018,31,0.5368,Operations Manager with 6.4 YOE; demonstrates 6.4 years relevant experience matching target band.
+CAND_0070525,32,0.5364,Senior Software Engineer (ML) with 5.4 YOE; demonstrates 5.4 years relevant experience matching target band.
+CAND_0022870,33,0.5350,AI Specialist with 6.7 YOE; demonstrates 6.7 years relevant experience matching target band.
+CAND_0024116,34,0.5347,Data Analyst with 7.7 YOE; demonstrates 7.7 years relevant experience matching target band.
+CAND_0056997,35,0.5333,Sales Executive with 10.5 YOE; demonstrates 10.5 years relevant experience matching target band.
+CAND_0068351,36,0.5332,Lead AI Engineer with 6.4 YOE; demonstrates 6.4 years relevant experience matching target band.
+CAND_0043860,37,0.5322,Junior ML Engineer with 6.1 YOE; demonstrates 6.1 years relevant experience matching target band.
+CAND_0061257,38,0.5322,Staff Machine Learning Engineer with 8.0 YOE; demonstrates 8.0 years relevant experience matching target band.
+CAND_0043676,39,0.5320,Senior Software Engineer (ML) with 6.1 YOE; demonstrates 6.1 years relevant experience matching target band.
+CAND_0024526,40,0.5319,Sales Executive with 5.2 YOE; demonstrates 5.2 years relevant experience matching target band.
+CAND_0084618,41,0.5316,Marketing Manager with 6.4 YOE; demonstrates 6.4 years relevant experience matching target band (Note: long notice period (90 days)).
+CAND_0089495,42,0.5314,Senior Software Engineer (ML) with 4.3 YOE; demonstrates moderate suitability as Senior Software Engineer (ML) (Note: long notice period (90 days)).
+CAND_0072660,43,0.5297,Machine Learning Engineer with 7.1 YOE; demonstrates 7.1 years relevant experience matching target band.
+CAND_0080766,44,0.5297,Staff Machine Learning Engineer with 8.8 YOE; demonstrates 8.8 years relevant experience matching target band.
+CAND_0086022,45,0.5297,Senior Applied Scientist with 5.3 YOE; demonstrates 5.3 years relevant experience matching target band.
+CAND_0017090,46,0.5292,Senior Software Engineer (ML) with 5.5 YOE; demonstrates 5.5 years relevant experience matching target band.
+CAND_0077498,47,0.5292,Senior Software Engineer (ML) with 5.4 YOE; demonstrates 5.4 years relevant experience matching target band.
+CAND_0065393,48,0.5291,Senior Data Engineer with 6.8 YOE; demonstrates 6.8 years relevant experience matching target band (Note: profile anomaly flags present).
+CAND_0007596,49,0.5284,Junior ML Engineer with 4.4 YOE; demonstrates 4.4 years relevant experience matching target band.
+CAND_0064326,50,0.5284,Search Engineer with 7.6 YOE; demonstrates 7.6 years relevant experience matching target band.
+CAND_0077337,51,0.5284,Staff Machine Learning Engineer with 7.0 YOE; demonstrates 7.0 years relevant experience matching target band.
+CAND_0082520,52,0.5282,Sales Executive with 6.4 YOE; demonstrates 6.4 years relevant experience matching target band.
+CAND_0088064,53,0.5278,Customer Support with 8.8 YOE; demonstrates 8.8 years relevant experience matching target band.
+CAND_0004852,54,0.5274,Senior Data Engineer with 7.0 YOE; demonstrates 7.0 years relevant experience matching target band (Note: long notice period (90 days)).
+CAND_0054123,55,0.5274,Applied ML Engineer with 4.7 YOE; demonstrates 4.7 years relevant experience matching target band.
+CAND_0044855,56,0.5271,Senior Data Scientist with 6.6 YOE; demonstrates 6.6 years relevant experience matching target band.
+CAND_0081852,57,0.5271,Senior Data Scientist with 5.9 YOE; demonstrates 5.9 years relevant experience matching target band.
+CAND_0070202,58,0.5266,Machine Learning Engineer with 5.1 YOE; demonstrates 5.1 years relevant experience matching target band (Note: long notice period (90 days)).
+CAND_0085756,59,0.5266,Data Engineer with 7.8 YOE; demonstrates 7.8 years relevant experience matching target band (Note: long notice period (90 days)).
+CAND_0042029,60,0.5261,Senior Data Scientist with 6.5 YOE; demonstrates 6.5 years relevant experience matching target band.
+CAND_0040117,61,0.5260,Recommendation Systems Engineer with 6.5 YOE; demonstrates 6.5 years relevant experience matching target band.
+CAND_0049038,62,0.5256,Data Analyst with 6.3 YOE; demonstrates 6.3 years relevant experience matching target band (Note: long notice period (90 days)).
+CAND_0093718,63,0.5256,Full Stack Developer with 8.0 YOE; demonstrates 8.0 years relevant experience matching target band (Note: long notice period (90 days)).
+CAND_0015057,64,0.5254,ML Engineer with 4.6 YOE; demonstrates 4.6 years relevant experience matching target band (Note: long notice period (90 days)).
+CAND_0079387,65,0.5252,AI Engineer with 6.9 YOE; demonstrates 6.9 years relevant experience matching target band.
+CAND_0088025,66,0.5252,Staff Machine Learning Engineer with 8.6 YOE; demonstrates 8.6 years relevant experience matching target band (Note: long notice period (90 days)).
+CAND_0049703,67,0.5250,Senior Data Engineer with 6.7 YOE; demonstrates 6.7 years relevant experience matching target band.
+CAND_0042501,68,0.5244,Content Writer with 7.6 YOE; demonstrates 7.6 years relevant experience matching target band (Note: long notice period (90 days)).
+CAND_0011489,69,0.5243,ML Engineer with 5.8 YOE; demonstrates 5.8 years relevant experience matching target band.
+CAND_0032179,70,0.5243,Computer Vision Engineer with 6.4 YOE; demonstrates 6.4 years relevant experience matching target band.
+CAND_0039042,71,0.5243,Mechanical Engineer with 6.5 YOE; demonstrates 6.5 years relevant experience matching target band.
+CAND_0051793,72,0.5243,Mechanical Engineer with 6.4 YOE; demonstrates 6.4 years relevant experience matching target band.
+CAND_0087167,73,0.5243,Civil Engineer with 6.0 YOE; demonstrates 6.0 years relevant experience matching target band.
+CAND_0092498,74,0.5243,Sales Executive with 5.7 YOE; demonstrates 5.7 years relevant experience matching target band.
+CAND_0096172,75,0.5243,NLP Engineer with 5.2 YOE; demonstrates 5.2 years relevant experience matching target band.
+CAND_0098176,76,0.5243,Business Analyst with 8.9 YOE; demonstrates 8.9 years relevant experience matching target band.
+CAND_0007775,77,0.5242,.NET Developer with 7.0 YOE; demonstrates 7.0 years relevant experience matching target band.
+CAND_0017960,78,0.5242,Recommendation Systems Engineer with 7.7 YOE; demonstrates 7.7 years relevant experience matching target band.
+CAND_0040887,79,0.5242,Machine Learning Engineer with 4.7 YOE; demonstrates 4.7 years relevant experience matching target band.
+CAND_0041669,80,0.5242,Recommendation Systems Engineer with 8.0 YOE; demonstrates 8.0 years relevant experience matching target band.
+CAND_0051759,81,0.5242,AI Specialist with 6.3 YOE; demonstrates 6.3 years relevant experience matching target band (Note: long notice period (120 days)).
+CAND_0070514,82,0.5242,AI Specialist with 5.5 YOE; demonstrates 5.5 years relevant experience matching target band.
+CAND_0078042,83,0.5242,Applied ML Engineer with 4.7 YOE; demonstrates 4.7 years relevant experience matching target band.
+CAND_0002120,84,0.5232,ML Engineer with 6.5 YOE; demonstrates 6.5 years relevant experience matching target band.
+CAND_0016699,85,0.5232,Frontend Engineer with 9.0 YOE; demonstrates 9.0 years relevant experience matching target band.
+CAND_0033445,86,0.5232,ML Engineer with 6.8 YOE; demonstrates 6.8 years relevant experience matching target band.
+CAND_0052335,87,0.5232,Applied ML Engineer with 6.4 YOE; demonstrates 6.4 years relevant experience matching target band.
+CAND_0062413,88,0.5232,AI Research Engineer with 6.6 YOE; demonstrates 6.6 years relevant experience matching target band.
+CAND_0003977,89,0.5230,Recommendation Systems Engineer with 4.6 YOE; demonstrates 4.6 years relevant experience matching target band.
+CAND_0006418,90,0.5229,Machine Learning Engineer with 5.7 YOE; demonstrates 5.7 years relevant experience matching target band.
+CAND_0075469,91,0.5229,Customer Support with 5.4 YOE; demonstrates 5.4 years relevant experience matching target band.
+CAND_0098952,92,0.5228,AI Research Engineer with 5.5 YOE; demonstrates 5.5 years relevant experience matching target band.
+CAND_0064633,93,0.5224,Civil Engineer with 10.7 YOE; demonstrates 10.7 years relevant experience matching target band.
+CAND_0005538,94,0.5222,Senior AI Engineer with 5.9 YOE; demonstrates 5.9 years relevant experience matching target band (Note: long notice period (90 days)).
+CAND_0045250,95,0.5222,Applied ML Engineer with 6.6 YOE; demonstrates 6.6 years relevant experience matching target band.
+CAND_0006757,96,0.5220,Senior Software Engineer with 5.4 YOE; demonstrates 5.4 years relevant experience matching target band.
+CAND_0051165,97,0.5218,Analytics Engineer with 6.2 YOE; demonstrates 6.2 years relevant experience matching target band.
+CAND_0076526,98,0.5214,Customer Support with 7.0 YOE; demonstrates 7.0 years relevant experience matching target band (Note: long notice period (90 days)).
+CAND_0004678,99,0.5212,QA Engineer with 9.6 YOE; demonstrates 9.6 years relevant experience matching target band.
+CAND_0099806,100,0.5212,AI Engineer with 4.6 YOE; demonstrates 4.6 years relevant experience matching target band.
