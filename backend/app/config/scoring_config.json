@@ -1,0 +1,73 @@
+{
+  "weights": {
+    "semantic": 0.40,
+    "skills": 0.20,
+    "experience": 0.15,
+    "education": 0.10,
+    "domain": 0.05,
+    "career_progression": 0.05,
+    "availability": 0.05
+  },
+  "anomaly_penalties": {
+    "HIGH": 0.0,
+    "MEDIUM": 0.70,
+    "LOW": 0.95,
+    "CLEAN": 1.0
+  },
+  "consulting_filter": {
+    "companies": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "cognizant",
+      "capgemini",
+      "tata consultancy services",
+      "mindtree",
+      "tech mahindra"
+    ],
+    "penalty_multiplier": 0.50
+  },
+  "experience_bands": {
+    "target_min": 5.0,
+    "target_max": 9.0,
+    "under_qualified_penalty_per_year": 15.0,
+    "over_qualified_penalty_per_year": 5.0
+  },
+  "education_scoring": {
+    "tier_1": 100.0,
+    "tier_2": 80.0,
+    "tier_3": 60.0,
+    "tier_4": 40.0,
+    "unknown": 40.0,
+    "cs_major_boost": 20.0,
+    "cs_majors": [
+      "computer science",
+      "data science",
+      "machine learning",
+      "artificial intelligence",
+      "mathematics",
+      "statistics",
+      "information technology"
+    ]
+  },
+  "availability_rules": {
+    "notice_period_days": [
+      { "limit": 30, "multiplier": 1.0 },
+      { "limit": 60, "multiplier": 0.90 },
+      { "limit": 90, "multiplier": 0.80 },
+      { "limit": 180, "multiplier": 0.50 }
+    ],
+    "last_active_days": [
+      { "limit": 30, "multiplier": 1.0 },
+      { "limit": 90, "multiplier": 0.90 },
+      { "limit": 180, "multiplier": 0.75 },
+      { "limit": 9999, "multiplier": 0.50 }
+    ],
+    "response_rates": [
+      { "limit": 0.70, "multiplier": 1.0 },
+      { "limit": 0.30, "multiplier": 0.85 },
+      { "limit": 0.00, "multiplier": 0.60 }
+    ]
+  }
+}
