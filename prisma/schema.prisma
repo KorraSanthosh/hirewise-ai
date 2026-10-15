@@ -1,0 +1,199 @@
+datasource db {
+  provider   = "postgresql"
+  url        = env("DATABASE_URL")
+  extensions = [vector]
+}
+
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["postgresqlExtensions"]
+}
+
+model User {
+  id           String      @id @default(uuid())
+  email        String      @unique
+  passwordHash String
+  name         String
+  role         String      @default("recruiter") // recruiter, admin
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime    @updatedAt
+  jobs         Job[]
+  candidates   Candidate[]
+}
+
+model Job {
+  id                    String      @id @default(uuid())
+  userId                String
+  title                 String
+  company               String?
+  department            String?
+  rawDescription        String      @db.Text
+  
+  // Structured data parsed by Gemini
+  requiredSkills        String[]
+  preferredSkills       String[]
+  responsibilities      String[]
+  experienceYears       Int         @default(0)
+  educationLevel        String      @default("Any")
+  seniority             String      @default("Any")
+  domain                String      @default("General")
+  softSkills            String[]
+  
+  // Custom Recruiters Preferences derived from JD (dynamic evaluation)
+  preferProductCompany  Boolean     @default(false)
+  preferredDegrees      String[]
+  preferredUniversities String[]
+
+  // Semantic representation (768 dimensions for text-embedding-004)
+  embedding             Unsupported("vector(768)")?
+
+  createdAt             DateTime    @default(now())
+  updatedAt             DateTime    @updatedAt
+  
+  user                  User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  matches               Match[]
+}
+
+model Candidate {
+  id                  String      @id @default(uuid())
+  userId              String
+  candidateId         String      @unique // Official CAND_XXXXXXX ID
+  name                String
+  email               String?
+  phone               String?
+  resumeUrl           String?     // Path to stored resume PDF
+  rawResumeText       String      @db.Text
+  
+  // Structured profile details
+  headline            String?
+  summary             String?     @db.Text
+  location            String?
+  country             String?
+  yearsOfExperience   Float       @default(0.0)
+  currentTitle        String?
+  currentCompany      String?
+  currentCompanySize  String?
+  currentIndustry     String?
+  seniority           String      @default("Mid")
+  domain              String      @default("General")
+  
+  // Nested relations
+  skills              Skill[]
+  careerHistory       CareerHistory[]
+  education           Education[]
+  
+  // Simulated platform behavioral signals (Redrob signals)
+  profileCompleteness Float       @default(0.0)
+  signupDate          DateTime?
+  lastActiveDate      DateTime?
+  openToWork          Boolean     @default(false)
+  profileViews30d     Int         @default(0)
+  applications30d     Int         @default(0)
+  recruiterResponse   Float       @default(0.0)
+  avgResponseTime     Float       @default(0.0)
+  connectionCount     Int         @default(0)
+  endorsementsCount   Int         @default(0)
+  noticePeriodDays    Int         @default(0)
+  expectedSalaryMin   Float       @default(0.0) // INR LPA
+  expectedSalaryMax   Float       @default(0.0) // INR LPA
+  preferredWorkMode   String      @default("flexible")
+  willingToRelocate   Boolean     @default(false)
+  githubActivityScore Float       @default(-1.0)
+  searchAppearance30d Int         @default(0)
+  savedByRecruiters30d Int        @default(0)
+  interviewCompletion Float       @default(0.0)
+  offerAcceptanceRate Float       @default(-1.0)
+  verifiedEmail       Boolean     @default(false)
+  verifiedPhone       Boolean     @default(false)
+  linkedinConnected   Boolean     @default(false)
+
+  // Semantic representation (768 dimensions for text-embedding-004)
+  embedding           Unsupported("vector(768)")?
+
+  // Anomaly Audit Tracking
+  anomalyStatus       String      @default("CLEAN") // CLEAN, LOW, MEDIUM, HIGH
+  anomalyReasons      String[]
+
+  createdAt           DateTime    @default(now())
+  updatedAt           DateTime    @updatedAt
+  
+  user                User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  matches             Match[]
+}
+
+model CareerHistory {
+  id             String    @id @default(uuid())
+  candidateId    String
+  company        String
+  title          String
+  startDate      DateTime?
+  endDate        DateTime?
+  durationMonths Int       @default(0)
+  isCurrent      Boolean   @default(false)
+  industry       String?
+  companySize    String?
+  description    String?   @db.Text
+
+  candidate      Candidate @relation(fields: [candidateId], references: [id], onDelete: Cascade)
+}
+
+model Education {
+  id           String    @id @default(uuid())
+  candidateId  String
+  institution  String
+  degree       String
+  fieldOfStudy String
+  startYear    Int?
+  endYear      Int?
+  grade        String?
+  tier         String    @default("unknown") // tier_1, tier_2, tier_3, tier_4, unknown
+
+  candidate    Candidate @relation(fields: [candidateId], references: [id], onDelete: Cascade)
+}
+
+model Skill {
+  id             String    @id @default(uuid())
+  candidateId    String
+  name           String
+  proficiency    String    @default("intermediate") // beginner, intermediate, advanced, expert
+  endorsements   Int       @default(0)
+  durationMonths Int       @default(0)
+
+  candidate      Candidate @relation(fields: [candidateId], references: [id], onDelete: Cascade)
+}
+
+model Match {
+  id                   String   @id @default(uuid())
+  jobId                String
+  candidateId          String
+  
+  // Score Breakdown (0.0 to 100.0)
+  overallScore         Float
+  semanticSimilarity   Float
+  skillMatchScore      Float
+  experienceScore      Float
+  educationScore       Float
+  domainScore          Float
+  careerProgressionScore Float
+  availabilityScore    Float
+  
+  // Explainable AI Reporting
+  strengths            String[]
+  weaknesses           String[]
+  missingSkills        String[]
+  hiringRecommendation String   @db.Text
+  improvementSuggestions String[]
+  
+  // Recruiter Interaction
+  recruiterNotes       String?  @db.Text
+  recruiterStatus      String   @default("PENDING") // PENDING, SHORTLISTED, REJECTED
+  recruiterFeedbackScore Float? // Optional rating (1-5) provided by recruiter to retrain weights
+
+  createdAt            DateTime @default(now())
+  updatedAt            DateTime @updatedAt
+  
+  job                  Job       @relation(fields: [jobId], references: [id], onDelete: Cascade)
+  candidate            Candidate @relation(fields: [candidateId], references: [id], onDelete: Cascade)
+
+  @@unique([jobId, candidateId])
+}
